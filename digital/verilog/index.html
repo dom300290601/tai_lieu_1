@@ -611,7 +611,34 @@
 
   <h1>Verilog cơ bản</h1>
 
-
+<p># Kiến thức Verilog cơ bản</p>
+<p>## Cấu trúc Module</p>
+<p>Một module cơ bản bao gồm các cổng vào/ra (input/output).</p>
+<p>### Code mẫu Counter 4-bit</p>
+<p>```verilog</p>
+<p>module counter (</p>
+<p>&#x20; input clk, rst,</p>
+<p>&#x20; output reg [3:0] count</p>
+<p>);</p>
+<p>&#x20; always @(posedge clk) begin</p>
+<p>&#x20;   if (rst) count &lt;= 4'b0;</p>
+<p>&#x20;   else count &lt;= count + 1;</p>
+<p>&#x20; end</p>
+<p>endmodule</p>
+<p># Kiến thức Verilog cơ bản</p>
+<p>## Cấu trúc Module</p>
+<p>Một module cơ bản bao gồm các cổng vào/ra (input/output).</p>
+<p>### Code mẫu Counter 4-bit</p>
+<p>```verilog</p>
+<p>module counter (</p>
+<p>&#x20; input clk, rst,</p>
+<p>&#x20; output reg [3:0] count</p>
+<p>);</p>
+<p>&#x20; always @(posedge clk) begin</p>
+<p>&#x20;   if (rst) count &lt;= 4'b0;</p>
+<p>&#x20;   else count &lt;= count + 1;</p>
+<p>&#x20; end</p>
+<p>endmodule</p>
 
 
 
